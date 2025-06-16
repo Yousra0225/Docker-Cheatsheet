@@ -32,4 +32,6 @@ The main objectives of Docker :
 ### Docker image 
 Docker image is a snapshot of the complete environment needed for the app — including language versions, dependencies, libraries, and configurations.
 ### Docker Container 
-Docker container is a instance/copy/object of/from image.
+Docker container is a instance/copy/object of/from image. executable
+### Docker Engine 
+Docker Engine is the program you install on your machine that allows to build images, run containers, and manage container, images, networks ...
