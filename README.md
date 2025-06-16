@@ -30,6 +30,6 @@ The main objectives of Docker :
 | **Faster Delivery** | Reduce time between writing code and running it in production. |
 
 ### Docker image 
-
+Docker image is a snapshot of the complete environment needed for the app — including language versions, dependencies, libraries, and configurations.
 ### Docker Container 
 Docker container is a instance/copy/object of/from image.
