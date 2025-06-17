@@ -12,6 +12,11 @@ It acts like a real computer with a CPU, memory (RAM), storage and an operating 
 2. The **hypervisor** is a software that creates and runs virutal machines (VirtualBox, VMware...), it shares the host's ressources (CPU, RAM...) with the virtual machineet .  
 3. The **guest machine** is the VM that runs unside the host.  
 
+## Problems 
+- Each VM needs a full-blown OS.
+- Slow start.
+- Ressource intensive (CPU, memory..).
+
 
 ## Advantages of Virtual Machines (VM)
 - Run multiple systems (Linux, Windows) on one computer.
