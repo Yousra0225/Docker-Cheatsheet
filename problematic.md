@@ -9,13 +9,17 @@ In another way, they give you a [`virtual machine`](./virtual-machine.md) inside
 - Eats CPU
 - Eats Disk Space
 
-## Container 
+## Containers
 
 - An isolated environment forruning an application.
 - They don't need a full OS.
-- Share the OP of the host.
+- Share the OS of the host.
 - Start quickly.
 - Need less hardware ressources.
+- All containers on a host share the same OS of the host.
+- All containers share the same kernel of the host.
+
+
 
 ## Comparison between Bare Metal, Virtual Machine, and Container
 
