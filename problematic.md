@@ -5,10 +5,17 @@ So in companies, they use servers, and they buy parts of the server — like run
 In another way, they give you a [`virtual machine`](./virtual-machine.md) inside a server.
 
 ## Disadvantages of Virtual Machines
-
 - Eats RAM
 - Eats CPU
 - Eats Disk Space
+
+## Container 
+
+- An isolated environment forruning an application.
+- They don't need a full OS.
+- Share the OP of the host.
+- Start quickly.
+- Need less hardware ressources.
 
 ## Comparison between Bare Metal, Virtual Machine, and Container
 
