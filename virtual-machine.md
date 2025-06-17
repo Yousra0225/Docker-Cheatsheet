@@ -5,7 +5,7 @@
 
 ## What is a Virtual Machine (VM) ?
 A virtual machine is a software-based computer that runs inside another computer, created using a **hypervisor**. 
-It acts like a real computer with a CPU, memory (RAM), storage and an operating system. 
+It acts like a real computer with a CPU, memory (RAM), storage and an operating system, managed by an hypervisor. 
 
 ## How does it work ?
 1. The **host** machine is your real computer.
