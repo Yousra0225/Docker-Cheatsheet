@@ -1,5 +1,7 @@
 # 📦 Containers Cheatsheet
 
+![kernel and container relionship](./src/kernel.png)
+
 ## What is a Container?
 
 - A **lightweight, isolated** environment to run applications.
@@ -20,6 +22,4 @@ A kernel is a computer program at the core of computer's OS, that has complete c
 | **Linux host**                | Can only run **Linux containers** (directly).                                                       |
 | **Windows host**              | Can run: <br> → **Windows containers** (natively) <br> → **Linux containers** (via Hyper-V) |
 | **Isolation level**           | Containers are **process-level isolated**, not hardware-level like VMs.                             |
-
----
 
