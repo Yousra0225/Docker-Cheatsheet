@@ -1,5 +1,5 @@
 # Dockerfile
-
+*A Dockerfile is a text file that contains a list of instructions to build a Docker image. It tells Docker what to install, which files to copy, and how to run an application inside a container.*
 ## Structure example
 
 ```dockerfile
