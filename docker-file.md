@@ -14,7 +14,11 @@ COPY . .
 # Step 4: Install dependencies (if it's a Node.js project)
 RUN npm install
 
-# Step 5: Specify the default command to run when the container starts
+# Step 5: Expose the application port 
+EXPOSE 3000 
+
+
+# Step 6: Specify the default command to run when the container starts
 CMD npm
 
 
