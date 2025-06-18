@@ -11,7 +11,7 @@ In another way, they give you a [`virtual machine`](./virtual-machine.md) inside
 
 ## Containers
 
-- An isolated environment forruning an application.
+- An isolated environment or process forruning an application.
 - They don't need a full OS.
 - Share the OS of the host.
 - Start quickly.
