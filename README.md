@@ -2,18 +2,16 @@
 
 - [What is Docker ?](#docker-documentation)
 - [Docker Idea](#docker-idea)
-- [Docker Container](#container-history)
-- [Virtual Machine](#container-history)
-- [Docker Commannds](#container-history)
+- [Docker Commannds](./docker-commands.md)
 - [Docker Properties](#container-history)
 - [Docker Images](#container-history)
-- [Docker Volumes](#container-history)
+- [Docker Container](#container-history)
+- [Dockerfile](./docker-file.md)
+- [Docker Volumes](#docker-compose)
+- [Docker Compose](#container-history)
 - [Docker Networks](#container-history)
 - [Docker Hub](#container-history)
-- [Images Layers](#container-history)
 - [Cross Container](#container-history)
-- [Projects](#container-history)
-- [Docker Composer](#container-history)
 
 ## What is Docker ?
 
@@ -40,14 +38,6 @@ Docker image is a snapshot of the complete environment needed for the app — in
 ### Docker Container 
 Docker container is a instance/copy/object of/from image. executable
 
-### Dockerfile 
-
-|Term|Explanation|
-|----|-----------|
-|`From`|Define the base image that contains a minimal filesystem and environment, on top of which we add additional files and configurations.|
-|`COPY`|copies files or directories from the build context (your local machine) into the container’s filesystem at a specified path.|
-|`WORKDIR`|defines the working directory inside the container where subsequent commands will be executed.|
-|`CMD`|specifies the default command and arguments that will run when a container it started from image|
 
 
 
