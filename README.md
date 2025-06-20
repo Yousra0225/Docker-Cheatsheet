@@ -8,7 +8,7 @@
 - [Docker Container](#container-history)
 - [Dockerfile](./docker-file.md)
 - [Docker Volumes](#docker-compose)
-- [Docker Compose](#container-history)
+- [Docker Compose](#DOCKER-COMPOSE)
 - [Docker Networks](#container-history)
 - [Docker Hub](#container-history)
 - [Cross Container](#container-history)
@@ -39,10 +39,32 @@ Docker image is a snapshot of the complete environment needed for the app — in
 Docker container is a instance/copy/object of/from image. executable
 
 ### Docker Compose
+Tool for building and running multi-container applications with one command. It manages interaction and networking between containers and their ports.  
+**Basic docker-compose.yml example**
+```yaml
+version: '3.8'
 
-Tool for building and runing multy container applicaions.
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
 
-- Install Docker compose : 
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: mydb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 
+volumes:
+  pgdata:
+```
 
 
