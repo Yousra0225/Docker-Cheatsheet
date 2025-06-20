@@ -28,7 +28,3 @@
 | `docker rm container`            | Remove a stopped container.                                        |
 | `docker info`                    | Show detailed info about Docker client and server.                 |
 | `docker login`                   | Log in to Docker Hub from the terminal.                            |
-
--` Docker Compose` : Outil qui permet de définir et lancer plusieurs conteneurs Docker en même temps via un fichier YAML.
-
-- `Docker Swarm` : Il transforme plusieurs hôtes Docker en un cluster unique, répartit automatiquement les conteneurs sur les nœuds
