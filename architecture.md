@@ -1,6 +1,6 @@
 # 🖥️ Docker Architecture: Bare Metal, Virtual Machines & Containers
 
-## 🧱 Bare Metal
+## Bare Metal
 
 ![Bare Metal](./src/bm.png)
 
@@ -26,7 +26,7 @@ A **bare metal system** is a physical computer or server running without any vir
 
 ---
 
-## 🧩 Containers
+## Containers
 
 ![Containers & Kernel](./src/kernel.png)
 
@@ -51,7 +51,7 @@ A **container** is a lightweight, isolated environment for running applications.
 
 ---
 
-## 🖥️ Virtual Machines (VMs)
+## Virtual Machines (VMs)
 
 ![Virtual Machines](./src/vm.png)
 
@@ -81,4 +81,15 @@ A **VM** is a software-emulated computer created by a **hypervisor**. It behaves
 - Less efficient than containers for lightweight tasks
 
 ---
+
+## Comparison Summary
+
+| Feature              | Bare Metal            | Virtual Machine                  | Container                     |
+|----------------------|------------------------|----------------------------------|-------------------------------|
+| Startup Time         | Fast                   | Slow                             | Very Fast                     |
+| Resource Efficiency  | High                   | Low                              | Very High                     |
+| OS Isolation         | N/A                    | Full OS per VM                   | Process-level                 |
+| Kernel Shared        | N/A                    | No                               | Yes                           |
+| Portability          | Low                    | Medium                           | High                          |
+| Use Case             | High-performance apps  | Testing, multiple OS, isolation  | Microservices, fast deploy    |
 
