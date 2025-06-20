@@ -38,6 +38,11 @@ Docker image is a snapshot of the complete environment needed for the app — in
 ### Docker Container 
 Docker container is a instance/copy/object of/from image. executable
 
+### Docker Compose
+
+Tool for building and runing multy container applicaions.
+
+- Install Docker compose : 
 
 
 
