@@ -1,4 +1,4 @@
-# 🐳 Docker Commands 
+# 🐳 Docker Commands
 
 ## Docker Image
 
@@ -12,10 +12,6 @@
 | `docker rmi image`            | Remove a local Docker image.                               |
 | `docker tag image user/image` | Tag an image with a new name before pushing to Docker Hub. |
 
--` Docker Compose` : Outil qui permet de définir et lancer plusieurs conteneurs Docker en même temps via un fichier YAML.
-
-- `Docker Swarm` : Il transforme plusieurs hôtes Docker en un cluster unique, répartit automatiquement les conteneurs sur les nœuds
-
 ## Docker Container
 
 | Command                          | Explanation                                                        |
@@ -24,9 +20,15 @@
 | `docker run -it image /bin/bash` | Create a container from an image and opens an interactive terminal |
 | `docker exec -it container bash` | Start an interactive terminal session inside a running container.  |
 | `docker logs container`          | Show logs from a container.                                        |
+| `docker start container-id`      | Start th container                                                 |
+| `docker stop container`          | Stop the container from runninf=g                                  |
 | `docker ps`                      | List running containers only.                                      |
 | `docker ps -a`                   | List all containers (running and stopped).                         |
 | `docker stop container`          | Stop a running container.                                          |
 | `docker rm container`            | Remove a stopped container.                                        |
 | `docker info`                    | Show detailed info about Docker client and server.                 |
 | `docker login`                   | Log in to Docker Hub from the terminal.                            |
+
+-` Docker Compose` : Outil qui permet de définir et lancer plusieurs conteneurs Docker en même temps via un fichier YAML.
+
+- `Docker Swarm` : Il transforme plusieurs hôtes Docker en un cluster unique, répartit automatiquement les conteneurs sur les nœuds
