@@ -1,17 +1,15 @@
 # Docker Documentation
 
 - [What is Docker ?](#docker-documentation)
-- [Docker Idea](#docker-idea)
 - [Docker Commannds](./docker-commands.md)
 - [Docker Properties](#container-history)
 - [Docker Images](#container-history)
 - [Docker Container](#container-history)
 - [Dockerfile](./docker-file.md)
-- [Docker Volumes](#docker-compose)
-- [Docker Compose](#DOCKER-COMPOSE)
-- [Docker Networks](#container-history)
+- [Docker Volumes](./docker-storage.md)
+- [Docker Compose](./docker-compose.md)
+- [Docker Networks](./docker-networks.md)
 - [Docker Hub](#container-history)
-- [Cross Container](#container-history)
 
 ## What is Docker ?
 
@@ -36,11 +34,4 @@ Docker Engine is the program you install on your machine that allows to build im
 
 Docker image is a snapshot of the complete environment needed for the app — including language versions, dependencies, libraries, and configurations.
 
-### Docker Container
-
-Docker container is a instance/copy/object of/from image. executable
-
-### Docker Compose
-
-Tool for building and running multi-container applications with one command. It manages interaction and networking between containers and their ports.  
 
