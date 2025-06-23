@@ -1,7 +1,7 @@
 # 🐳 Docker Storage
-
-## Volume mounts
-
+![Docker storage illustration](./src/docker-storage.png)  
+It's a mechanism or mount pointthat links a storage location to a container.
+## Volume 
 - A volume is a way to store data in Docker.
 - It keeps data even if the container is deleted.
 - The data is saved on the host of the computer.
@@ -16,3 +16,5 @@
 | `docker rm ` volume-name            | Deletes the volume                 |
 | `docker run -v` volume-name         | Mounts a volume into the container |
 | `docker run --mount`                | Alternative way to mount a volume  |
+
+## Bind Mount 
