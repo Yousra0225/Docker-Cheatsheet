@@ -43,8 +43,13 @@ version: "3.9"
 services:
     frontend:
         build: ./web # Path to the Dockerfile for the frontend
+        ports: 
+            - <host_port>:<container_port>
     backend:
         build: ./api # Path to the Dockerfile for the api
+        ports: 
+            - <host_port>:<container_port>
     database:
-        image: postgres:version
+        image: postgres:<version> # build the image for db
+            - <host_port>:<container_port>
 ```
