@@ -24,6 +24,23 @@ services:
             - <host_port>:<container_port>
 ```
 
+## 2. Configuration instructions
+
+| Key              | Description                                                      |
+| ---------------- | ---------------------------------------------------------------- |
+| `build`          | Path or configuration to build a Docker image from a Dockerfile. |
+| `image`          | Specify the image to use for the container.                      |
+| `container_name` | Assign a custom name to the container.                           |
+| `command`        | Override the default command.                                    |
+| `entrypoint`     | Override the default entrypoint.                                 |
+| `ports`          | Map host ports to container ports (`HOST:CONTAINER`).            |
+| `expose`         | Expose ports to linked services without publishing to the host.  |
+| `volumes`        | Mount volumes .                                                  |
+| `environment`    | Set environment variables.                                       |
+| `depends_on`     | Define service dependencies (startup order).                     |
+| `networks`       | Connect the service to specified networks.                       |
+| `working_dir`    | Set the working directory inside the container.                  |
+
 ## Commands
 
 | Command                                  | Description                                                           |
