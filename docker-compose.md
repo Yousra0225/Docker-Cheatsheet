@@ -1,55 +1,38 @@
-# Docker Compose 
+# Docker Compose
+
 ![Docker compose illustration](./src/Docker-Compose.png)  
-*Tool for building and running multi-container applications with one command. It manages interaction and networking between containers and their ports.*  
+_Tool for building and running multi-container applications with one command. It manages interaction and networking between containers and their ports._
 
-## Basic docker-compose.yml example  
-```yaml
-version: '3.8'
+## docker-compose file (yml)
 
-services:
-  app:
-    build: .
-    ports:
-      - "3000:3000"
-    volumes:
-      - .:/app
-    depends_on:
-      - db
+## 1. Services
 
-  db:
-    image: postgres:14
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: pass
-      POSTGRES_DB: mydb
-    volumes:
-      - pgdata:/var/lib/postgresql/data
+_It's a definition of a Docker container configuration within the docker-compose.yml file. It specifies which Docker image to use, dockerfile location , and the container’s runtime settings (ports, volumes, environment variables, networks). Each service corresponds to one or more containers running the same configuration._
 
-volumes:
-  pgdata:
-```
-
-## Compose File properties 
-
-### 1. Version
-*Compose file version supported by the Docker Engine.*
-```yml
-version: "3.9"
-```
-
-### 2. Services 
-*It's a definition of a Docker container configuration within the docker-compose.yml file. It specifies which Docker image to use, dockerfile location , and the container’s runtime settings (ports, volumes, environment variables, networks). Each service corresponds to one or more containers running the same configuration.*
 ```yml
 services:
     frontend:
         build: ./web # Path to the Dockerfile for the frontend
-        ports: 
+        ports:
             - <host_port>:<container_port>
     backend:
         build: ./api # Path to the Dockerfile for the api
-        ports: 
+        ports:
             - <host_port>:<container_port>
     database:
         image: postgres:<version> # build the image for db
             - <host_port>:<container_port>
 ```
+
+## Commands
+
+| Command                                  | Description                                                           |
+| ---------------------------------------- | --------------------------------------------------------------------- |
+| `docker-compose up`                      | Starts all the services defined in the file.                          |
+| `docker-compose down`                    | Stops and removes all containers associated with the Compose project. |
+| `docker-compose build`                   | Builds or rebuilds the service images.                                |
+| `docker-compose ps`                      | Displays the status of running containers.                            |
+| `docker-compose run <service> <command>` | Runs a one-off command in a new container of a specific service.      |
+| `docker-compose logs`                    | Shows the logs of running services.                                   |
+| `docker-compose stop`                    | Stops the containers without removing them.                           |
+| `docker-compose restart`                 | Restarts all running services.                                        |
